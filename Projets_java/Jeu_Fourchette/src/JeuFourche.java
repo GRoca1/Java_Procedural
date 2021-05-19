@@ -7,20 +7,29 @@ public class JeuFourche {
 		
 		    Scanner sc = new Scanner(System.in);		   	    
 		    int compteur = 0;
+		    int essai=5;
 		    int min, max, nbUser, nbMachine;
 		    boolean continuer = false;
 		    Random aleas = new Random();
+		    
+		    boolean continuer2 = false;
+		    do {
+				
+		   continuer=false;
+		    compteur=0;
+		    essai=5;
+		    
 		    nbMachine = aleas.nextInt(101);
 		    min = 0;
 		    max = 100;
 		    do {
 		    System.out.println("Choisissez un nombre entre " + min + " et " + max);
-		    System.out.println("Vous avez 5 essais " );
+		    System.out.println("Vous avez " + essai +"  essais " );
 		    nbUser=sc.nextInt();		    
 		    if (nbUser > nbMachine) {
 		    	
 		    	max=nbUser;
-		    	compteur++;
+		    	compteur++;essai--;
 		    	
 		    	
 		    }
@@ -28,10 +37,11 @@ public class JeuFourche {
 		    else if (nbUser<nbMachine)
 		    {
 		    	min=nbUser;
-		    	compteur++;
+		    	compteur++;essai--;
 		    }
 		    else {
-		    	compteur++;		    
+		    	compteur++;	essai--;
+		    	
 		    	continuer = true;
 		    }
 		    }
@@ -43,9 +53,23 @@ public class JeuFourche {
 		    else {
 		    	System.out.println("Perdu! Essayez encore! ");
 		    	System.out.println("le nombre choisi est:" + nbMachine);
-		    	sc.close();
-		    }
-		    
+		    	
+		    } sc.nextLine();
+		    System.out.println("Voulez vous continuer? O/N");
+		   String rep= sc.nextLine();
+		   if(rep.equals("O"))
+		   {
+			   continuer2= true;
+			   
+			
+		}
+		
+		  else { continuer2 = false; }
+		 
+			
+			} while (continuer2==true);   
 	
+sc.close();
+  System.out.println("programme terminé");
 
 }}
