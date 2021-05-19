@@ -56,7 +56,7 @@ public class JeuFourche {
 		    	
 		    } sc.nextLine();
 		    System.out.println("Voulez vous continuer? O/N");
-		   String rep= sc.nextLine();
+		   String rep= sc.nextLine().toUpperCase();
 		   if(rep.equals("O"))
 		   {
 			   continuer2= true;
