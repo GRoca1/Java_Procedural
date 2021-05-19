@@ -1,0 +1,14 @@
+
+import java.util.Arrays; 
+  
+public class Nb_triés
+{ 
+    public static void main(String[] args) 
+    { 
+        int[] tab = {5, 1, 8, 0, 9, 4, 3, 2, 7 }; 
+  
+        Arrays.sort(tab); 
+  
+        System.out.printf("tab[] : %s", Arrays.toString(tab)); 
+    }
+}

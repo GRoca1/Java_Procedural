@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Kms_Miles {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+
+         
+		
+        double kiloMeters,miles;
+        
+        double conversionFactor = 1.609344;
+ 
+        
+        System.out.println("Enter distance value in Kilometers : ");
+        Scanner input = new Scanner(System.in);
+        kiloMeters = input.nextDouble();
+ 
+        
+        miles = kiloMeters / conversionFactor;
+ 
+        
+        System.out.println("The distance in Miles : " + miles);
+ 
+    }
+}

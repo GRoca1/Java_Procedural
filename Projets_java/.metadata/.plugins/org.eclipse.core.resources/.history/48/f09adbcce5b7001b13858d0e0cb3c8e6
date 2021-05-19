@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Nb_de_Jeunes {
+
+	private static Object a;
+
+	public static void main(String[] args) {
+				
+		
+		int age , moinsvinght =0;
+		System . out . println (" Donner un age :") ;
+		a = Lire . d () ;
+		if(a <20)
+			moinsvinght = moinsvinght +1;
+		System . out . println (" Donner un age :") ;
+		a = Lire . d () ;
+		if(a <20)
+		mineur = mineur +1;
+		System . out . println (" Donner un age :") ;
+		a = Lire . d () ;
+		if(a <20)
+		mineur = mineur +1;
+		System . out . println (" Donner un age :") ;
+		a = Lire . d () ;
+		if(a <20)
+		mineur = mineur +1;
+		System . out . println (" Donner un age :") ;
+		a = Lire . d () ;
+		if(a <20)
+		mineur = mineur +1;
+		if( mineur ==0)
+		System . out . println ("au dela de 20 ans ") ;
+		else
+		
+	}
+}

@@ -1,0 +1,48 @@
+import java.util.*;
+
+public class Nb_de_Jeunes {
+
+	public static void main(String[] args) {
+				
+		
+		 int[] personnes = new int[20];
+         for (int i = 0; i < personnes.length; i++)
+         {
+        	 System.out.println("Veuillez saisir l'âge de la personne n° :" + (i + 1));
+             
+         }
+         int NBmoinsvingt=0;
+         int NBvingt = 0;
+         foreach (int age in personnes);
+         {
+             if (NBvingt<20)
+             {
+                 NBmoinsvingt++;
+             }
+             if (NBvingt == 20)
+             {
+                 NBvingt++;
+             }
+         }
+         if (NBmoinsvingt==0)
+         {
+        	 System.out.println("Toutes les personnes (20) ont plus de 20 ans !");
+         }
+         else if (NBmoinsvingt==personnes.length)
+         {
+        	 System.out.println("Toutes les personnes (20) ont moins de 20 ans !");
+         }
+         else
+         { int NBplusvingt = 20 - NBmoinsvingt - NBvingt;
+
+         System.out.println("Nous avons {0} personnes de moins de vingt ans \n Nous avons {1} personnes de plus de vingt ans et \n Nous avons {2} personnes de vingt ans", NBmoinsvingt, NBplusvingt, NBvingt);
+         }
+         
+     }
+
+	
+}
+
+	}
+
+}
