@@ -7,14 +7,16 @@ public class NombresPremiers{
 	{
 
 		Scanner sc = new Scanner(System.in);
-		String recommencer="";
+		String relance="";
 		long nombre;
 		boolean pre=true;
-		long div=2;
+		long div;
 		do {
+			pre=true;
+			div=2;
 			System.out.println ("Veuillez saisir un nombre entier : ");
 			nombre=sc.nextLong();
-			while(div<Math.sqrt(nombre)&& pre==true)
+			while(div<=Math.sqrt(nombre)&& pre==true)
 			{
 				if(nombre%div==0) {
 
@@ -23,18 +25,18 @@ public class NombresPremiers{
 				div++;
 			}
 			if (!pre) {
-				System.out.println("le nombre n'est pas premier:"+div);
+				System.out.println("le nombre n'est pas premier car il a au moins un diviseur:"+(div-1));
 			}
 			else {
-				System.out.println("le nombre"+ nombre + "est premier");
+				System.out.println(" le nombre " + nombre + " est premier ");
 			}
 
 			sc.nextLine();
 
 			System.out.println("Voulez vous recommencer O/N?");
-			recommencer=sc.nextLine();
+			relance=sc.nextLine().toUpperCase();
 		}
-		while (recommencer.charAt(0)=='0' && recommencer.length()<2);
+		while (relance.charAt(0)=='O' && relance.length()<2);
 
 		sc.close();
 
