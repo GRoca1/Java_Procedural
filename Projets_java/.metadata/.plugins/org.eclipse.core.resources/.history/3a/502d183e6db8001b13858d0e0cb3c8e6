@@ -1,0 +1,25 @@
+
+public class NombresPremiers
+{
+
+	public static void main (String [] arg)
+	{
+
+		System.out.println ("Veuillez saisir un nombre inferieur à 1000 : ");
+		System.out.print ("1    2    " );
+		for (int i = 3; i < 1000; ++i)
+		{
+			if (Premier (i) == true)		// appel de la fonction et test de la valeur retournée
+			{
+				System.out.print (i + "    ");
+			}
+		}
+		System.out.println ();
+
+	}
+
+	private static boolean Premier(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}
