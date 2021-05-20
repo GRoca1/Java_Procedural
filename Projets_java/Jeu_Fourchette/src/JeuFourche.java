@@ -32,6 +32,7 @@ public class JeuFourche {
 		    	compteur++;essai--;
 		    	
 		    	
+		    	
 		    }
 		    
 		    else if (nbUser<nbMachine)

@@ -20,9 +20,7 @@ public class Kms_Miles {
  
         DecimalFormat mode = new DecimalFormat("#.##");
         System.out.println("The distance in Miles : " + mode.format(miles));
-        
-        
-        
+             
         
         
 
