@@ -1,0 +1,19 @@
+
+public class Aire_Sphere {
+
+	 public static double CircleArea(double r) {
+	        return Math.PI * (r * r);
+	   }
+	 
+	   public static void main(String[] args) { 
+	        System.out.print("l'aire d'un cercle de rayon de 1 cm est "+CircleArea(1)+"cm2\n");
+	        System.out.print("l'aire d'un cercle de rayon de 5 cm est "+CircleArea(5)+"cm2\n");
+	        System.out.print("l'aire d'un cercle de rayon de 8 cm est "+CircleArea(8)+"cm2\n");
+	        System.out.print("l'aire d'un cercle de rayon de 10 cm est "+CircleArea(10)+"cm2\n");
+	    }
+	    
+	
+		
+	}
+
+

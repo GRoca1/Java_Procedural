@@ -1,0 +1,10 @@
+package projets;
+
+public class Bicyclette
+{
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

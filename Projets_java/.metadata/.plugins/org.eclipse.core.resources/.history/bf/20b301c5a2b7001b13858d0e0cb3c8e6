@@ -1,0 +1,37 @@
+import java.util.Scanner;
+ 
+class CalculSurfaceCercleExemple {
+ 
+public static void main(String[] args) {
+ 
+int rayon = 0;
+System.out.println("Veuillez taper le rayon du cercle");
+ 
+try
+{
+ 
+
+Scanner entree = new Scanner(System.in);
+rayon = Integer.parseInt(entree.nextLine());
+
+}catch(NumberFormatException ex)
+{
+System.out.println("Nombre invalid" + ex);
+System.exit(0);
+}
+ 
+ 
+
+ 
+double surface = Math.PI * rayon * rayon;
+ 
+System.out.println("La surface du cercle est " + surface);
+}
+}
+ 
+
+
+	
+	       
+	   
+	 

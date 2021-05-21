@@ -61,6 +61,9 @@ public class NombresPremiers{
 		}
 		
 		return mesDiviseurs;
+		
+		
+		
 	}
 }
 

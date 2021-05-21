@@ -1,0 +1,68 @@
+package projets;
+
+public class Fourchette{
+
+
+public static void main(String args[], Object NULL) {
+
+
+
+
+	 
+	
+	{ int nombreMystere = 0, nombreEntre = 0;
+	     int MAX = 100, MIN = 1;
+
+	   
+	     {
+	    srand(time(NULL=null));
+	    nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+
+	   
+
+	    do
+	    {
+	       
+	        printf("Quel est le nombre ? ");
+	        scanf("%d", nombreEntre);
+
+	       
+
+	        if (nombreMystere > nombreEntre)
+	            printf("C'est plus !\n\n");
+	        else if (nombreMystere < nombreEntre)
+	            printf("C'est moins !\n\n");
+	        else
+	            printf ("Bravo, vous avez trouve le nombre mystere !!!\n\n");
+	    } while (nombreEntre != nombreMystere);
+	    
+	    return;
+	}
+
+}
+}
+
+private static void printf(String string) {
+	
+	
+}
+
+private static void scanf(String string, int nombreEntre) {
+	
+	
+}
+
+private static void srand(Object time) {
+	
+}
+
+private static Object time(Object object) {
+	
+	return null;
+}
+
+private static int rand() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+}
