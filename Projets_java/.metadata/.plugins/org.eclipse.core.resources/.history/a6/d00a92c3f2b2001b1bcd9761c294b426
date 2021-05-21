@@ -1,0 +1,68 @@
+package projets;
+
+public class function{
+
+
+public static void main(String args[], Object NULL) {
+
+
+
+
+	 
+	
+	{ int nombreMystere = 0, nombreEntre = 0;
+	     int MAX = 100, MIN = 1;
+
+	    // Génération du nombre aléatoire
+	     {
+	    srand(time(NULL=null));
+	    nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+
+	    /* La boucle du programme. Elle se répète tant que l'utilisateur n'a pas trouvé le nombre mystère */
+
+	    do
+	    {
+	        // On demande le nombre
+	        printf("Quel est le nombre ? ");
+	        scanf("%d", nombreEntre);
+
+	        // On compare le nombre entré avec le nombre mystère
+
+	        if (nombreMystere > nombreEntre)
+	            printf("C'est plus !\n\n");
+	        else if (nombreMystere < nombreEntre)
+	            printf("C'est moins !\n\n");
+	        else
+	            printf ("Bravo, vous avez trouve le nombre mystere !!!\n\n");
+	    } while (nombreEntre != nombreMystere);
+	    
+	    return;
+	}
+
+}
+}
+
+private static void printf(String string) {
+	// TODO Auto-generated method stub
+	
+}
+
+private static void scanf(String string, int nombreEntre) {
+	// TODO Auto-generated method stub
+	
+}
+
+private static void srand(Object time) {
+	
+}
+
+private static Object time(Object object) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+private static int rand() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+}

@@ -1,0 +1,33 @@
+package projets;
+
+import java.util.Scanner;
+
+public class Moyenne <function>
+
+
+
+
+public static void main(String[] args)
+{
+	Scanner sc = new Scanner(System.in);
+
+
+
+
+function numAverage(a)
+{
+         {
+		  var b = a.length,
+		      c = 0, i;
+		  for (i = 0; i < b; i++){
+		    c += Number(a[i]);
+		  }
+		  
+		  return c/b;
+		
+
+	
+}
+
+}
+

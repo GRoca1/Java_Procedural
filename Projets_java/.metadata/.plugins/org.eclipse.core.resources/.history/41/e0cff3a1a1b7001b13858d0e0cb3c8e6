@@ -1,0 +1,86 @@
+
+
+
+	import java.awt.*;
+	import java.awt.event.*;
+	import java.text.DecimalFormat;
+	import javax.swing.*;
+
+	public class Aire_Sphere extends JFrame implements ActionListener {
+	   
+	    private String formuleAire[] = {"pi*r^2  +  pi*r*Ap", "2*pi*r^2  +  2*pi*r*h", "4*pi*r^2", "L*l  +  Pe*Ap / 2", "2*Ab  +  Pe*h" };
+	    private String formuleVolume[] = {"pi*r^2*h / 3", "pi*r^2*h", "4*pi*r^3 / 3", "L*l*h / 3", "L*l*h"};
+		private Object[] txAttribs;
+	   
+	    private static final double PI = 3.1416;
+	    
+	    public static void main1(String[] args) { 
+	    public Aire_Sphere()
+	        super.setTitle("Aires et Volumes");
+	        Container c = getContentPane();
+	    }
+	        
+	       
+	       
+	   
+	    public double[] getAires() {
+	        try {
+	           
+	            double rayon = (((Component) txAttribs[0]).isEnabled()) ? Double.parseDouble(txAttribs[0].getText()) : 0;
+	            double hauteur = (((Component) txAttribs[1]).isEnabled()) ? Double.parseDouble(txAttribs[1].getText()) : 0;
+	            double apothene = (((Component) txAttribs[2]).isEnabled()) ? Double.parseDouble(txAttribs[2].getText()) : 0;
+	            double longueur = (((Component) txAttribs[3]).isEnabled()) ? Double.parseDouble(txAttribs[3].getText()) : 0;
+	            double largeur = (((Component) txAttribs[4]).isEnabled()) ? Double.parseDouble(txAttribs[4].getText()) : 0;
+	            
+	            double operation[] = {
+	                PI * rayon * apothene,   
+	                (2 * PI * rayon * rayon) + (2 * PI * rayon * hauteur),   
+	                4 * PI * rayon * rayon,   
+	                (longueur * largeur) + (  ( ((2 * longueur) + (2 * largeur)) * apothene ) / 2  ),  
+	                (2 * (longueur * largeur) ) + ( ((2 * longueur) + (2 * largeur)) * hauteur )   
+	            };
+	            return operation;
+	        }
+	        catch(NumberFormatException e) {
+	            JOptionPane.showMessageDialog(null, "Entrée manquante ou format invalide",
+	                    "Erreur", JOptionPane.ERROR_MESSAGE);
+	            return null;
+	        }
+	    }
+	    
+	  
+	    public double[] getVolumes() {
+	        try {
+	            
+	            double rayon = (((Component) txAttribs[0]).isEnabled()) ? Double.parseDouble(txAttribs[0].getText()) : 0;
+	            double hauteur = (((Component) txAttribs[1]).isEnabled()) ? Double.parseDouble(txAttribs[1].getText()) : 0;
+	            if (((Component) txAttribs[2]).isEnabled()) {
+					Double.parseDouble(((Object) txAttribs[2]).getText());
+				}
+	            double longueur = (((Component) txAttribs[3]).isEnabled()) ? Double.parseDouble(txAttribs[3].getText()) : 0;
+	            double largeur = (((Component) txAttribs[4]).isEnabled()) ? Double.parseDouble(txAttribs[4].getText()) : 0;
+	    
+	            double operation[] = {
+	                (PI * rayon * rayon * hauteur) / 2,   
+	                PI * rayon * rayon * hauteur,    
+	                (4 * PI * Math.pow(rayon, 3)) / 3,    
+	                (longueur * largeur * hauteur) / 3,    
+	                longueur * largeur * hauteur    
+	            };
+	            return operation;
+	        }
+	        catch(NumberFormatException e) {
+	            JOptionPane.showMessageDialog(null, "Entrée manquante ou format invalide",
+	                    "Erreur", JOptionPane.ERROR_MESSAGE);
+	            return null;
+	        }
+	    }
+	    
+	    
+	    public static void main(String[] args) {
+	        Aire_Sphere app = new Aire_Sphere();
+	        app.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	    }
+	}
+	}    
+

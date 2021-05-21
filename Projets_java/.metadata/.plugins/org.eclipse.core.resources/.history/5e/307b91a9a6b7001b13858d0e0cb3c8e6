@@ -1,0 +1,54 @@
+package JeuFourche;
+import java.util.Scanner;
+public class JeuFourche {
+  public static void main(String[] args) {
+    jouerJeuFouche(100,7);
+  }
+
+  static void jouerJeuFouche(int nmax, int maxessais)
+  {
+    Scanner cin = new Scanner(System.in);
+    System.out.println("Trouvez un entier dans [1.." + nmax
+         + "] en " + maxessais + " tentatives max");
+    JeuFourche jeu = new JeuFourche(nmax);
+    int nessais = 0;
+    int nombre;
+    boolean succes = false;
+    while (!succes && nessais < maxessais)
+    {
+      System.out.print("Votre entier? ");
+      nombre = cin.nextInt();
+      int result = jeu.compare(nombre);
+      if (result < 0)
+      {
+        System.out.println("C'est moins");
+      }
+      else if (result > 0)
+      {
+        System.out.println("C'est plus");
+      }
+      else
+      {
+        succes = true;
+      }
+      ++nessais;
+    }
+    if (succes)
+    {
+      System.out.println("==> Bravo, Vous avez trouve en " + nessais + " essai(s)");
+    }
+    else
+    {
+      System.out.print("==> Désolé, ");
+      jeu.afficher();
+    }
+  }
+}
+		
+	
+		
+		
+		
+	
+
+

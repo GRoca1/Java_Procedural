@@ -1,0 +1,36 @@
+package projets;
+
+import java.util.Scanner;
+
+public class Moyenne {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		String reponse;
+
+		System.out.println("Est-ce qu'il fera beau demain?");
+		reponse = sc.nextLine().toLowerCase();
+
+		System.out.println(reponse);
+			  int somme = 0; 
+			  for(int i=0; i<table.length; i++)
+			    somme = somme + table[i];
+			  }
+			  {
+			  float result = somme/table.length;
+			  return result;
+			}
+		
+		
+	
+			
+
+	
+
+}
+
+
+
+	

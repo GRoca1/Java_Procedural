@@ -3,10 +3,10 @@ import java.util.Arrays;
   
 public class Nb_triés
 { 
-    private static int taille;
-	private static int[] contenu;
+    
 
 	public static void main(String[] args) 
+	
     { 
         int[] tab = {5, 1, 8, 0, 9, 6, 4, 3, 2, 7 }; 
   
