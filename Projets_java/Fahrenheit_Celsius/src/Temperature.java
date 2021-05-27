@@ -1,4 +1,3 @@
-import java.text.*;
 import java.util.*;
 
 public class Temperature {
@@ -37,13 +36,13 @@ public class Temperature {
 			} 
 			while (mode!='1' && mode!='2' && test.length()>1 );
 
-			DecimalFormat modele=new DecimalFormat("0.00");
+			//DecimalFormat modele=new DecimalFormat("0.00");
 
 			if (mode=='1') {
 				System.out.println("Veuillez entrer la température en Celcius à convertir!");
 				double a=sc.nextDouble();
 				double s=a*(9)/5+32;
-				s=nombreArrondi(s);
+				s=Temperature.nombreArrondi2(s,3);
 				//String result = modele.format(s);
 
 				System.out.println("température équivalente en fahrenheit :" +s );
@@ -54,7 +53,7 @@ public class Temperature {
 				System.out.println("Veuillez entrer la température en Fahrenheit à convertir!");
 				double f=sc.nextDouble();
 				double c=(f-32)*5/9;
-				c=nombreArrondi(c);
+				c=nombreArrondi2(c,3);
 				//String result2 =modele.format(c);
 				System.out.println("température équivalente en Celcius :" +c );
 
@@ -72,11 +71,17 @@ public class Temperature {
 	}
 	public static double nombreArrondi( double _nb)
 	{
-		double nbarrondis=Math.round(_nb*100.0)/100.0;		
-		return nbarrondis;
+		double nbarrondi=Math.round(_nb*100.0)/100.0;		
+		return nbarrondi;
 
 	}
+	public static double nombreArrondi2( double _nb, int _chiffrevirgule)
+	{
+		double temp=_nb*Math.pow(10, _chiffrevirgule);
+		double nbarrondi=Math.round(temp)/Math.pow(10, _chiffrevirgule);		
+		return nbarrondi;
 
+	}
 
 
 
