@@ -43,10 +43,10 @@ public class Temperature {
 				System.out.println("Veuillez entrer la température en Celcius à convertir!");
 				double a=sc.nextDouble();
 				double s=a*(9)/5+32;
+				s=nombreArrondi(s);
+				//String result = modele.format(s);
 
-				String result = modele.format(s);
-
-				System.out.println("température équivalente en fahrenheit :" +result );
+				System.out.println("température équivalente en fahrenheit :" +s );
 
 			}
 			else
@@ -54,8 +54,9 @@ public class Temperature {
 				System.out.println("Veuillez entrer la température en Fahrenheit à convertir!");
 				double f=sc.nextDouble();
 				double c=(f-32)*5/9;
-				String result2 =modele.format(c);
-				System.out.println("température équivalente en Celcius :" +result2 );
+				c=nombreArrondi(c);
+				//String result2 =modele.format(c);
+				System.out.println("température équivalente en Celcius :" +c );
 
 			}
 			sc.nextLine();
@@ -69,9 +70,9 @@ public class Temperature {
 
 
 	}
-	public static double nombreArrondi( double nb)
+	public static double nombreArrondi( double _nb)
 	{
-		double nbarrondis=nb;
+		double nbarrondis=Math.round(_nb*100.0)/100.0;		
 		return nbarrondis;
 
 	}
