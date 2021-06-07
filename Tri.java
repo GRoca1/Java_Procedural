@@ -1,32 +1,47 @@
-package Tri;
-
-import java.util.Arrays;
-import java.util.Collections;
-
-public class Tri {
+package tableau2dim_formation;
 
    
-public static void main(String[] args) {
+	class Tri  {
+		 
 
-   
-   int array[] = {};
+		static int[] table = new int[4]; 
+		    static void AfficherTable ( ) {
+		      
+		        int n = table.length-1;
+		        for ( int i = 1; i <= n; i++) 
+		            System.out.print(table[i]+" , ");
+		         System.out.println();
+		    }
+		     static void InitTable  ( ) {
+		     
+		        int n = table.length-1;
+		        for ( int i = 1; i <= n; i++) 
+		          table[i] = (int)(Math.random()*100);
+		    }
 
-   
-   Integer[] integerArray = new Integer[array.length];
-   
-   for (int i=0; i < array.length; i++) {
-      System.out.println("nombre: " + array[i]);
-  
-   integerArray[i] = new Integer(array[i]);
-   }
- 
-  
-   Arrays.sort(integerArray, Collections.reverseOrder());
+		 public static void main(String[ ] args) {
+		        InitTable ( );
+		        System.out.println("Tableau initial :");
+		         AfficherTable ( );
+		         TriSelect ( );
+		         System.out.println("Tableau une fois trié :");
+		        AfficherTable ( );
+		        }
+		
 
-  
-   System.out.println("Tableau trié\n");
-   for (int entier : integerArray) {
-      System.out.println("nombre: " + entier);
-   }
-   }
-}
+		static void TriSelect ( ) {
+		  
+		        int n = table.length-1;
+		        for ( int i = 1; i <= n-1; i++)
+		         { 
+		           int m = i; 
+		           for ( int j = i+1; j <= n; j++)   
+		             if (table[ j ] < table[ m ]) 
+		                  m = j ; 
+		          
+		              int temp = table[ m ];
+		               table[ m ] = table[ i ];
+		               table[ i ] = temp;
+		         }
+		}
+	}
