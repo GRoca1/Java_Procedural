@@ -1,0 +1,8 @@
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\bin\Release\netstandard2.0\lib_kiloutou.deps.json
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\bin\Release\netstandard2.0\lib_kiloutou.dll
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\bin\Release\netstandard2.0\lib_kiloutou.pdb
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\obj\Release\netstandard2.0\lib_kiloutou.csprojAssemblyReference.cache
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\obj\Release\netstandard2.0\lib_kiloutou.AssemblyInfoInputs.cache
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\obj\Release\netstandard2.0\lib_kiloutou.AssemblyInfo.cs
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\obj\Release\netstandard2.0\lib_kiloutou.dll
+C:\Users\Stagiaire\source\repos\lib_kiloutou\lib_kiloutou\obj\Release\netstandard2.0\lib_kiloutou.pdb
