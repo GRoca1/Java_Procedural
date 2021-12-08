@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Astro</title>
+    <script src="js/Astro.js" defer>
+    </Script>
+    <style>
+        
+        #wheel {
+            background-image: url(images/giphy.gif);
+            opacity: 0.5;
+            width: 480px;
+            height: 480px;
+            background-repeat: no-repeat;
+            /* display: inline-block; */
+            position: relative;
+            top: -10px;
+            left: 40%;
+        }
+
+        body {
+            background-image: url(images/star2.jpg);
+        }
+
+        fieldset {
+            color: white;
+            padding: 30px;
+            width: 30%;
+            background-color: rgb(80, 78, 80);
+            opacity: 0.70;
+            border-radius: 60px;
+            float: left;
+        }
+
+        legend {
+            text-align: center;
+            font-weight: bolder;
+            font-size: x-large;
+            font-style: oblique;
+            text-shadow: 5px 5px 5px rgb(39, 38, 39);
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            font-weight: bold;
+            font-style: oblique;
+        }
+
+        input[type="text"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        input[type="reset"] {
+            display: block;
+            width: auto;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur Astro Inscription</h1>
+    <form method="post" action="Astro.html" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                Connexion / Log In
+            </legend>
+            <label> Nom / Name:</label> <input type="text" name="txtnom" id="txtnom"> <br /><br />
+            <label>Prénom / Surname:</label> <input type="text" name="txtprenom" id="txtprenom"> <br /><br />
+            <label>Date de naissance / D.o.B:</label>
+            <select name="jour" id="jour">
+                <option selected="true" value="">Jour</option>
+            </select>
+            <select name="mois" id="mois">
+                <option selected="true" value="">Mois</option>
+            </select>
+            <select name="annee" id="annee">
+                <option selected="true" value="">Année</option>
+            </select>
+            <br /><br />
+            <label for="Pseudo">Pseudo (min 4 charactères):</label><input type="text" id="pseudo" name="pseudo" required
+                minlength="4" size="10"><br /><br />
+            <input type="button" value="valider" name="valider" id="valider" disabled="true" />
+            <input type="reset" id="maj" name="maj">
+        </fieldset>
+    </form><br /><br />
+    <div id="wheel"></div>
+</body>
+
+<!-- <img alt="" src="images/giphy.gif" />   -->
+
+</html>
